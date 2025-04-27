@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild dist/index.js --bundle --outfile=dist/bundle.js",
+    "build": "esbuild index.js --bundle --minify --format=esm --outfile=dist/bundle.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
